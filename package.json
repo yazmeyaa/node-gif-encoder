@@ -1,5 +1,5 @@
 {
-  "name": "node_gif_encoder",
+  "name": "node-gif-encoder",
   "version": "0.0.1",
   "description": "GIF encoder",
   "main": "index.js",
@@ -9,7 +9,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/yazmeyaa/node_gif_encoder.git"
+    "url": "git+https://github.com/yazmeyaa/node-gif-encoder.git"
   },
   "keywords": [
     "gif"
@@ -17,9 +17,9 @@
   "author": "yazmeyaa",
   "license": "AGPL-3.0",
   "bugs": {
-    "url": "https://github.com/yazmeyaa/node_gif_encoder/issues"
+    "url": "https://github.com/yazmeyaa/node-gif-encoder/issues"
   },
-  "homepage": "https://github.com/yazmeyaa/node_gif_encoder#readme",
+  "homepage": "https://github.com/yazmeyaa/node-gif-encoder#readme",
   "dependencies": {},
   "devDependencies": {
     "@types/node": "^22.7.4",
