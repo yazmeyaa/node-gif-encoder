@@ -173,11 +173,13 @@ export class LogicalDisplayDescriptor implements BytesEncoder {
 
 
     public toBuffer(): Buffer {
-        const screenSize = Buffer.from(new Uint16Array([this.width, this.height]).buffer);
-        const packedFields = this.packageFields();
-        const bg = Buffer.from(new Int8Array([this.backgroundColorIndex]).buffer)
-        const pixelAspectRatio = Buffer.from(new Int8Array([this.pixelAspectRatio]).buffer)
+        const parts = [
+            Buffer.from(new Uint16Array([this.width, this.height]).buffer),
+            this.packageFields(),
+            Buffer.from(new Int8Array([this.backgroundColorIndex]).buffer),
+            Buffer.from(new Int8Array([this.pixelAspectRatio]).buffer),
+        ];
 
-        return Buffer.concat([screenSize, packedFields, bg, pixelAspectRatio])
+        return Buffer.concat(parts)
     }
 }
