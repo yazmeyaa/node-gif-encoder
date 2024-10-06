@@ -1,4 +1,4 @@
-import { Color } from "./color_table";
+import { Color } from "./colors";
 
 export enum ImageType {
     WEBP = "webp",

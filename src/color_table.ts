@@ -1,43 +1,5 @@
+import { Color, getNearColor } from "./colors";
 import { BytesEncoder } from "./types";
-import { getValueByRange } from "./utils";
-
-export class Color implements BytesEncoder {
-    public readonly red: number;
-    public readonly green: number;
-    public readonly blue: number;
-
-    constructor(red: number, green: number, blue: number) {
-        const maxValue = 2 ** 8 - 1; //0-based 8bit value;
-        this.red = getValueByRange(red, 0, maxValue);
-        this.green = getValueByRange(green, 0, maxValue);
-        this.blue = getValueByRange(blue, 0, maxValue);
-    }
-
-    public toBuffer(): Buffer {
-        const colorsArr = new Uint8Array([this.red, this.green, this.blue]);
-        return Buffer.from(colorsArr);
-    }
-
-    public toHexString(separator = "."): string {
-        const red = this.red.toString(16);
-        const green = this.green.toString(16);
-        const blue = this.blue.toString(16);
-
-        return [red, green, blue].join(separator);
-    }
-
-    static fromString(string: string, separator = "."): Color {
-        const parts = string.split(separator);
-        if (parts.length !== 3) throw new Error("Malformed color signature.");
-        const [red, green, blue] = parts.map(Number.parseInt);
-
-        return new Color(
-            getValueByRange(red, 0, 255),
-            getValueByRange(green, 0, 255),
-            getValueByRange(blue, 0, 255),
-        );
-    }
-}
 
 /**
  * This block contains a color table, which is a sequence of
@@ -63,6 +25,10 @@ export class ColorTable implements BytesEncoder {
             return;
         }
         this.colors.push(color);
+    }
+
+    public getNearColor(color: Color): Color {
+        return getNearColor(color, this);
     }
 
     public toBuffer(): Buffer {
