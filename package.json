@@ -1,32 +1,32 @@
 {
-  "name": "node-gif-encoder",
-  "version": "0.0.1",
-  "description": "GIF encoder",
-  "main": "index.js",
-  "scripts": {
-    "start": "ts-node ./src/index.ts",
-    "test": "glob -c \"tsx --test --test-reporter spec \" \"./test/**/*.test.ts\""
-  },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/yazmeyaa/node-gif-encoder.git"
-  },
-  "keywords": [
-    "gif"
-  ],
-  "author": "yazmeyaa",
-  "license": "AGPL-3.0",
-  "bugs": {
-    "url": "https://github.com/yazmeyaa/node-gif-encoder/issues"
-  },
-  "homepage": "https://github.com/yazmeyaa/node-gif-encoder#readme",
-  "dependencies": {},
-  "devDependencies": {
-    "@types/node": "^22.7.4",
-    "glob": "^11.0.0",
-    "prettier": "3.3.3",
-    "ts-node": "^10.9.2",
-    "tsx": "^4.19.1",
-    "typescript": "^5.6.2"
-  }
+    "name": "node-gif-encoder",
+    "version": "0.0.1",
+    "description": "GIF encoder",
+    "main": "index.js",
+    "scripts": {
+        "start": "ts-node ./src/index.ts",
+        "test": "glob -c \"tsx --test --test-reporter spec \" \"./test/**/*.test.ts\""
+    },
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/yazmeyaa/node-gif-encoder.git"
+    },
+    "keywords": [
+        "gif"
+    ],
+    "author": "yazmeyaa",
+    "license": "AGPL-3.0",
+    "bugs": {
+        "url": "https://github.com/yazmeyaa/node-gif-encoder/issues"
+    },
+    "homepage": "https://github.com/yazmeyaa/node-gif-encoder#readme",
+    "dependencies": {},
+    "devDependencies": {
+        "@types/node": "^22.7.4",
+        "glob": "^11.0.0",
+        "prettier": "3.3.3",
+        "ts-node": "^10.9.2",
+        "tsx": "^4.19.1",
+        "typescript": "^5.6.2"
+    }
 }

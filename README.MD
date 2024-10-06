@@ -4,16 +4,16 @@ This **Node.js GIF Encoder** is a specialized tool for creating GIF images progr
 
 ## Key Features
 
-- **Strict GIF89a Compliance:** Adheres closely to the GIF89a specification, without backward compatibility for GIF87a.
-- **Efficient Data Handling:** All internal operations utilize `Uint8Array`, `Uint16Array`, and `Buffer` to ensure high performance and memory safety.
-- **Powerful LZW Compression:** (In progress) A well-implemented LZW compression algorithm for optimized GIF size and speed.
-- **Customizable Output:** Configure frame delays, loop count, and image quality to meet the specific needs of your project.
-- **Full Test Coverage:** The project is fully covered by tests located in the `test` folder.
+-   **Strict GIF89a Compliance:** Adheres closely to the GIF89a specification, without backward compatibility for GIF87a.
+-   **Efficient Data Handling:** All internal operations utilize `Uint8Array`, `Uint16Array`, and `Buffer` to ensure high performance and memory safety.
+-   **Powerful LZW Compression:** (In progress) A well-implemented LZW compression algorithm for optimized GIF size and speed.
+-   **Customizable Output:** Configure frame delays, loop count, and image quality to meet the specific needs of your project.
+-   **Full Test Coverage:** The project is fully covered by tests located in the `test` folder.
 
 ## Future Plans
 
-- **Advanced LZW Compression:** We're working on perfecting the compression algorithm for better performance and smaller file sizes.
-- **Additional Optimizations:** Further performance tuning to reduce memory usage and improve encoding speed.
+-   **Advanced LZW Compression:** We're working on perfecting the compression algorithm for better performance and smaller file sizes.
+-   **Additional Optimizations:** Further performance tuning to reduce memory usage and improve encoding speed.
 
 ## License
 
