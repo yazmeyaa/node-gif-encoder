@@ -24,6 +24,9 @@ test("Color", async (t) => {
         const expectedColor = table.colors[0]; // rgb(10, 20, 30) is closest color;
 
         const nearColor = getNearColor(color, table);
-        assert(nearColor.toBuffer().equals(expectedColor.toBuffer()), "Got unexpected color. It was not closest color.");
+        assert(
+            nearColor.toBuffer().equals(expectedColor.toBuffer()),
+            "Got unexpected color. It was not closest color.",
+        );
     });
 });

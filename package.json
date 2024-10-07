@@ -5,7 +5,8 @@
     "main": "index.js",
     "scripts": {
         "start": "ts-node ./src/index.ts",
-        "test": "glob -c \"tsx --test --test-reporter spec \" \"./test/**/*.test.ts\""
+        "test": "glob -c \"tsx --test --test-reporter spec \" \"./test/**/*.test.ts\"",
+        "format": "prettier . --write"
     },
     "repository": {
         "type": "git",
